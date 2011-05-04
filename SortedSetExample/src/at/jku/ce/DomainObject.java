@@ -10,10 +10,12 @@ public class DomainObject {
 	private String uuid = UUid.randomUUid().toString();
 	private String name;
 
-	public DomainObject(String uuid) {
+	public DomainObject(String name, String comment) {
 	  super();
 	  this.uuid = uuid;
 	}
 
-	public String getuuid() {	   return uuid;	}
+	public String getuuid() {
+	   return uuid;
+	}
 }
