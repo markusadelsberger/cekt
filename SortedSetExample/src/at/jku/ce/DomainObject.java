@@ -13,5 +13,5 @@ public class DomainObject {
 	  this.id = id;
 	}
 
-
+	private String name;
 }
