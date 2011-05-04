@@ -9,7 +9,7 @@ public class DomainObject {
 		super();
 	}
 	
-	public String id;
+	private String id;
 	private String name;
 
 	public DomainObject(String id) {
