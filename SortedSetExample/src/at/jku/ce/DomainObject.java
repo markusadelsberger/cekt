@@ -9,13 +9,15 @@ public class DomainObject {
 		super();
 	}
 	
-	public String id;
+	public String uuid;
 	private String name;
 
-	public DomainObject(String id) {
+	public DomainObject(String uuid) {
 	  super();
-	  this.id = id;
+	  this.uuid = id;
 	}
 
-	public String getId() {	   return id;	}
+	public String getUuId() {
+	   return uuid;
+	}
 }
