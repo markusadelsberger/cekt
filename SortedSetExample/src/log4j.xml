@@ -8,7 +8,10 @@
 			<param name="ConversionPattern" value="%-5p %c{1} - %m%n" />
 		</layout>
 	</appender>
-
+	<logger name="at.jku.ce" additivity="false" >
+		<level value="DEBUG" />
+		<appender-ref ref="console" />
+	</logger>
    	<root>
 		<priority value="ERROR" />
 		<appender-ref ref="console" />
