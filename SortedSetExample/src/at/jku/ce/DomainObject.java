@@ -16,6 +16,12 @@ public class DomainObject {
 	  this.uuid = uuid;
 	}
 
+	public boolean equals (Object obj) {
+	  if (!(obj instanceof DomainObject)) { return false; }
+	  DomainObject domainObj = (DomainObject) obj;
+	  return uuid.equals(domainObj.getUuid());
+	}
+
 	public String toString() {
 	  return "DomainObject [name=" + name + ", comment=" + 	  comment + ", uuid=" + uuid + "]";
 	}
