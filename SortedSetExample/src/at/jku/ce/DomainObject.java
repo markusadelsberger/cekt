@@ -16,6 +16,10 @@ public class DomainObject {
 	  this.uuid = uuid;
 	}
 
+	public String toString() {
+	  return "DomainObject [name=" + name + ", comment=" + 	  comment + ", uuid=" + uuid + "]";
+	}
+
 	public String getuuid() {
 	   return uuid;
 	}
