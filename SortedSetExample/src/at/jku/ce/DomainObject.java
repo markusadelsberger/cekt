@@ -26,6 +26,14 @@ public class DomainObject {
 	  return "DomainObject [name=" + name + ", comment=" + 	  comment + ", uuid=" + uuid + "]";
 	}
 
+	public int hashCode() {
+	  if(uuid != null) {
+	    return uuid.hashCode();
+	  } else {
+	    return super.hashCode();
+	  }
+     }
+
 	public String getuuid() {
 	   return uuid;
 	}
